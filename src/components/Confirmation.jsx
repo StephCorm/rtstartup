@@ -14,7 +14,7 @@ class Confirmation extends Component{
     }
 
     render(){
-        const {values: { projectNumber, projectName, radioGroup21}} = this.props;
+        const {values: { projectNumber, projectName, radioGroup21, radioGroup22}} = this.props;
 
         return(
             <div>
@@ -28,7 +28,10 @@ class Confirmation extends Component{
                         <List.Content>Project Name: {projectName}</List.Content>
                     </List.Item>
                     <List.Item>
-                        <List.Content>2.1: {radioGroup21}</List.Content>
+                        <List.Content>2.1 System Installed Correctly and Level: {radioGroup21}</List.Content>
+                    </List.Item>
+                    <List.Item>
+                        <List.Content>2.1 System Supported: {radioGroup22}</List.Content>
                     </List.Item>
                 </List>
 
