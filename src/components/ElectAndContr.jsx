@@ -16,157 +16,159 @@ class ElectAndContr extends Component{
     }
 
     render() {
-        const { values, valPar21, valPar22, valPar23, valPar24, valPar25, valPar26, valPar27, valPar28, valPar29, valPar210, valPar211, valPar212, valPar213, valPar214, valPar215 } = this.props
+        const { values, valPar39, valPar310, valPar311, valPar312, valPar313, valPar314 } = this.props
         return (
             <Form color='blue'>
-                <h1 className="ui centered">Preliminary Inspection</h1>
+                <h1 className="ui centered">System Start-Up</h1>
+                <h3 className="ui centered">Cpp Electrical</h3>
                 <Form.Field>
-                    <Form.Field>2.1 Reactor Installed Correct and Level:</Form.Field>
+                    <Form.Field>3.9 CPP Main Disconnect Turned Off:</Form.Field>
                     <Radio
                         label={'Yes'}
-                        name={'radio21'}
+                        name={'radio39'}
                         value={'Yes'}
-                        checked={valPar21 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp21')}
+                        checked={valPar39 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect39')}
                     />
                     <Radio
                         label={'No'}
-                        name={'radio21'}
+                        name={'radio39'}
                         value={'No'}
-                        checked={valPar21 === 'No'}
-                        onChange={this.props.handleRadio('preInsp21')}
+                        checked={valPar39 === 'No'}
+                        onChange={this.props.handleRadio('cppElect39')}
                     />
                     <Radio
                         label={'N/A'}
-                        name={'radio21'}
+                        name={'radio39'}
                         value={'N/A'}
-                        checked={valPar21 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp21')}
+                        checked={valPar39 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect39')}
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>
                 <Form.Field>
-                    <Form.Field>2.2 System Sufficiently Supported:</Form.Field>
+                    <Form.Field>3.10 Main Power Supply to CPP Disconnect:</Form.Field>
                     <Radio
                         label={'Yes'}
-                        name={'radio22'}
+                        name={'radio310'}
                         value={'Yes'}
-                        checked={valPar22 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp22')}
+                        checked={valPar310 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect310')}
                     />
                     <Radio
                         label={'No'}
-                        name={'radio22'}
+                        name={'radio310'}
                         value={'No'}
-                        checked={valPar22 === 'No'}
-                        onChange={this.props.handleRadio('preInsp22')}
+                        checked={valPar310 === 'No'}
+                        onChange={this.props.handleRadio('cppElect310')}
                     />
                     <Radio
                         label={'N/A'}
-                        name={'radio22'}
+                        name={'radio310'}
                         value={'N/A'}
-                        checked={valPar22 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp22')}
+                        checked={valPar310 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect3101')}
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>
                 <Form.Field>
-                    <Form.Field>2.3 Water Flowing through inlet then outlet:</Form.Field>
+                    <Form.Field>3.11 Measure and Record CPP No-Load Voltage:</Form.Field>
                     <Radio
                         label={'Yes'}
-                        name={'radio23'}
+                        name={'radio311'}
                         value={'Yes'}
-                        checked={valPar23 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp23')}
+                        checked={valPar311 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect311')}
                     />
                     <Radio
                         label={'No'}
-                        name={'radio23'}
+                        name={'radio311'}
                         value={'No'}
-                        checked={valPar23 === 'No'}
-                        onChange={this.props.handleRadio('preInsp23')}
+                        checked={valPar311 === 'No'}
+                        onChange={this.props.handleRadio('cppElect311')}
                     />
                     <Radio
                         label={'N/A'}
-                        name={'radio23'}
+                        name={'radio311'}
                         value={'N/A'}
-                        checked={valPar23 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp23')}
+                        checked={valPar311 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect311')}
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>
                 <Form.Field>
-                    <Form.Field>2.4 Sufficient Service Clearance:</Form.Field>
+                    <Form.Field>3.12 Energize CPP Main Disconnect:</Form.Field>
                     <Radio
                         label={'Yes'}
-                        name={'radio24'}
+                        name={'radio312'}
                         value={'Yes'}
-                        checked={valPar24 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp24')}
+                        checked={valPar312 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect312')}
                     />
                     <Radio
                         label={'No'}
-                        name={'radio24'}
+                        name={'radio312'}
                         value={'No'}
-                        checked={valPar24 === 'No'}
-                        onChange={this.props.handleRadio('preInsp24')}
+                        checked={valPar312 === 'No'}
+                        onChange={this.props.handleRadio('cppElect312')}
                     />
                     <Radio
                         label={'N/A'}
-                        name={'radio24'}
+                        name={'radio312'}
                         value={'N/A'}
-                        checked={valPar24 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp24')}
+                        checked={valPar312 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect312')}
+                    />
+                </Form.Field>
+                <div className = 'ui divider'></div>
+                <h3 className="ui centered">System Controls and Comms</h3>
+                <Form.Field>
+                    <Form.Field>3.13 Energize and Verify Operations of Controller:</Form.Field>
+                    <Radio
+                        label={'Yes'}
+                        name={'radio313'}
+                        value={'Yes'}
+                        checked={valPar313 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect313')}
+                    />
+                    <Radio
+                        label={'No'}
+                        name={'radio313'}
+                        value={'No'}
+                        checked={valPar313 === 'No'}
+                        onChange={this.props.handleRadio('cppElect313')}
+                    />
+                    <Radio
+                        label={'N/A'}
+                        name={'radio313'}
+                        value={'N/A'}
+                        checked={valPar313 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect313')}
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>
                 <Form.Field>
-                    <Form.Field>2.5 Drain and Vent Installed:</Form.Field>
+                    <Form.Field>3.14 Verify and Record Controller Settings:</Form.Field>
                     <Radio
                         label={'Yes'}
-                        name={'radio25'}
+                        name={'radio314'}
                         value={'Yes'}
-                        checked={valPar25 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp25')}
+                        checked={valPar314 === 'Yes'}
+                        onChange={this.props.handleRadio('cppElect314')}
                     />
                     <Radio
                         label={'No'}
-                        name={'radio25'}
+                        name={'radio314'}
                         value={'No'}
-                        checked={valPar25 === 'No'}
-                        onChange={this.props.handleRadio('preInsp25')}
+                        checked={valPar314 === 'No'}
+                        onChange={this.props.handleRadio('cppElect314')}
                     />
                     <Radio
                         label={'N/A'}
-                        name={'radio25'}
+                        name={'radio314'}
                         value={'N/A'}
-                        checked={valPar25 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp25')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.6 CPP Instaled:</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio26'}
-                        value={'Yes'}
-                        checked={valPar26 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp26')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio26'}
-                        value={'No'}
-                        checked={valPar26 === 'No'}
-                        onChange={this.props.handleRadio('preInsp26')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio26'}
-                        value={'N/A'}
-                        checked={valPar26 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp26')}
+                        checked={valPar314 === 'N/A'}
+                        onChange={this.props.handleRadio('cppElect314')}
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>

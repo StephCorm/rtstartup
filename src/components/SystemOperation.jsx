@@ -16,7 +16,7 @@ class SystemOperation extends Component{
     }
 
     render() {
-        const { values, valPar21, valPar22, valPar23, valPar24, valPar25, valPar26, valPar27, valPar28, valPar29, valPar210, valPar211, valPar212, valPar213, valPar214, valPar215 } = this.props
+        const { values, valPar315, valPar316, valPar317, valPar318, valPar319, valPar320, valPar321, valPar322, valPar323, } = this.props
         return (
             <Form color='blue'>
                 <h1 className="ui centered">Preliminary Inspection</h1>
