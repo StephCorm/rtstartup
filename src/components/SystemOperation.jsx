@@ -4,7 +4,7 @@ import { throws } from 'assert';
 
 import '../App.css'
 
-class PrelimInspection extends Component{
+class SystemOperation extends Component{
     saveAndContinue = (e) => {
         e.preventDefault();
         this.props.nextStep();
@@ -270,131 +270,6 @@ class PrelimInspection extends Component{
                     />
                 </Form.Field>
                 <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.11 Neutral Bonded to Ground:</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio211'}
-                        value={'Yes'}
-                        checked={valPar211 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp211')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio211'}
-                        value={'No'}
-                        checked={valPar211 === 'No'}
-                        onChange={this.props.handleRadio('preInsp211')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio211'}
-                        value={'N/A'}
-                        checked={valPar211 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp211')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.12 Discreet I/O Terminated</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio212'}
-                        value={'Yes'}
-                        checked={valPar212 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp212')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio212'}
-                        value={'No'}
-                        checked={valPar212 === 'No'}
-                        onChange={this.props.handleRadio('preInsp212')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio212'}
-                        value={'N/A'}
-                        checked={valPar212 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp212')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.13 Spare Parts at Site:</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio213'}
-                        value={'Yes'}
-                        checked={valPar213 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp213')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio213'}
-                        value={'No'}
-                        checked={valPar213 === 'No'}
-                        onChange={this.props.handleRadio('preInsp213')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio213'}
-                        value={'N/A'}
-                        checked={valPar213 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp213')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.14 Portable Photometer at Site:</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio214'}
-                        value={'Yes'}
-                        checked={valPar214 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp214')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio214'}
-                        value={'No'}
-                        checked={valPar214 === 'No'}
-                        onChange={this.props.handleRadio('preInsp214')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio214'}
-                        value={'N/A'}
-                        checked={valPar214 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp214')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
-                <Form.Field>
-                    <Form.Field>2.15 Optiview Installed / Connected:</Form.Field>
-                    <Radio
-                        label={'Yes'}
-                        name={'radio215'}
-                        value={'Yes'}
-                        checked={valPar215 === 'Yes'}
-                        onChange={this.props.handleRadio('preInsp215')}
-                    />
-                    <Radio
-                        label={'No'}
-                        name={'radio215'}
-                        value={'No'}
-                        checked={valPar215 === 'No'}
-                        onChange={this.props.handleRadio('preInsp215')}
-                    />
-                    <Radio
-                        label={'N/A'}
-                        name={'radio215'}
-                        value={'N/A'}
-                        checked={valPar215 === 'N/A'}
-                        onChange={this.props.handleRadio('preInsp215')}
-                    />
-                </Form.Field>
-                <div className = 'ui divider'></div>
                 <Button onClick={this.back}>Back</Button>
                 <Button onClick={this.saveAndContinue}>Save And Continue </Button>
             </Form>
@@ -402,4 +277,4 @@ class PrelimInspection extends Component{
     }
 }
 
-export default PrelimInspection
+export default SystemOperation
